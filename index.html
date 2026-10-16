@@ -23,32 +23,47 @@
 </head>
 <body>
   <h1>Política de privacidad — App Nomade Nation</h1>
-  <p class="updated">Última actualización: 15 de julio de 2026</p>
+  <p class="updated">Última actualización: 16 de octubre de 2026</p>
 
-  <p>Esta política describe cómo trata los datos la aplicación móvil
-  <strong>Nomade Nation</strong> (en adelante, «la app»), diseñada para ver y
-  controlar los sistemas de campers Nomade Nation desde la pantalla del vehículo
-  (Android Auto).</p>
+  <p>Esta política describe cómo trata los datos la aplicación
+  <strong>Nomade Nation</strong> (en adelante, «la app»), que sirve para ver y
+  controlar los sistemas de las campers Nomade Nation desde el móvil, desde un
+  reloj con Wear OS y desde la pantalla del vehículo (Android Auto).</p>
 
   <h2>Datos que recopilamos</h2>
   <p><strong>Ninguno.</strong> La app no recopila, almacena ni comparte datos
-  personales. No utiliza cuentas de usuario, ni la ubicación del dispositivo, ni
-  identificadores publicitarios, ni herramientas de analítica.</p>
+  personales. No tiene cuentas de usuario propias, no usa la ubicación del
+  dispositivo, ni identificadores publicitarios, ni herramientas de analítica.
+  No hay servidores de Nomade Nation que reciban datos de la app.</p>
 
   <h2>Cómo funciona</h2>
-  <p>La app se comunica <strong>exclusivamente con el equipo de control instalado
-  en tu propia camper</strong> (una unidad local, dentro de la red WiFi de la
-  furgoneta) para mostrar su estado (temperaturas, batería, agua, etc.) y enviar
-  órdenes (luces, clima, etc.). Esa comunicación ocurre dentro de tu red local y
-  <strong>no pasa por servidores de Nomade Nation ni de terceros</strong>.</p>
+  <p>La app se comunica <strong>con el equipo de control instalado en tu propia
+  camper</strong> para mostrar su estado (batería, agua, temperaturas, luces,
+  etc.) y enviar órdenes (luces, clima, etc.), de una de estas dos formas:</p>
+  <ul>
+    <li><strong>En la red de la camper</strong>: directamente, dentro de su red
+    WiFi.</li>
+    <li><strong>Desde fuera</strong>: a través de un túnel cifrado (HTTPS) que el
+    propietario aloja en ese mismo equipo. Ese tráfico lo enruta
+    <strong>Cloudflare</strong>, que además controla el acceso: la dirección de
+    correo con la que te identificas la procesa Cloudflare con ese único fin.
+    La app guarda en el móvil la sesión de ese acceso para no pedirla cada vez;
+    no se copia a la nube.</li>
+  </ul>
+  <p><strong>El reloj</strong> (Wear OS) no se conecta a la camper ni a internet:
+  le pide los datos al móvil emparejado, por la conexión entre reloj y móvil de
+  Google, y es el móvil quien habla con la camper como se describe arriba.</p>
 
   <h2>Permisos</h2>
   <p>La app solo solicita acceso a la red (Internet / estado de la red) para
-  hablar con el equipo local de la camper. No solicita permisos sensibles.</p>
+  hablar con el equipo de la camper. No solicita permisos sensibles.</p>
 
   <h2>Terceros</h2>
-  <p>La app no envía información a terceros. Al distribuirse a través de Google
-  Play, se aplican además las políticas de Google.</p>
+  <p>Fuera de la red de la camper, el tráfico pasa por Cloudflare tal como se
+  explica arriba, y le aplica su
+  <a href="https://www.cloudflare.com/privacypolicy/">política de privacidad</a>.
+  La app no envía información a ningún otro tercero. Al distribuirse a través de
+  Google Play, se aplican además las políticas de Google.</p>
 
   <h2>Cambios</h2>
   <p>Si esta política cambia, se actualizará esta misma página con una nueva fecha.</p>
